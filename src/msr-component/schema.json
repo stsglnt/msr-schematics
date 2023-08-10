@@ -1,0 +1,32 @@
+{
+  "$schema": "http://json-schema.org/schema",
+  "$id": "msr-component",
+  "type": "object",
+  "title": "MSR Component Schema",
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "Component name",
+      "x-prompt": "Provide file name",
+      "$default": {
+        "$source": "argv",
+        "index": 0
+      }
+    },
+    "path": {
+      "type": "string",
+      "description": "File path",
+      "format": "path",
+      "x-prompt": "Provide file path",
+      "default": "src/app"
+    },
+    "project": {
+      "type": "string",
+      "description": "The name of the project.",
+      "$default": {
+        "$source": "projectName"
+      }
+    }
+  },
+  "required": ["name"]
+}

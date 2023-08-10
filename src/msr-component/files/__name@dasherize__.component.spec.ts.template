@@ -1,0 +1,12 @@
+import { MockBuilder, MockRender } from "ng-mocks";
+
+import { <%= classify(name) %>Component } from "./<%= dasherize(name) %>.component";
+
+describe("<%= classify(name) %>Component", () => {
+  beforeEach(() => MockBuilder().keep(<%= classify(name) %>Component, { shallow: true }));
+
+  it("should create", () => {
+    const component = MockRender(<%= classify(name) %>Component).componentInstance;
+    expect(component).toBeTruthy();
+  });
+});

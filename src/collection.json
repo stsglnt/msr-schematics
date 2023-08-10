@@ -1,0 +1,11 @@
+{
+  "$schema": "../node_modules/@angular-devkit/schematics/collection-schema.json",
+  "schematics": {
+    "msr-component":  {
+      "description": "Generate msr component",
+      "factory": "./msr-component/index#msrComponentGenerator",
+      "schema": "./msr-component/schema.json",
+      "aliases": ["c"]
+    }
+  }
+}
