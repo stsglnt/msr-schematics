@@ -1,7 +1,11 @@
 {
   "name": "msr-schematics",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "MSR schematics",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/stsglnt/msr-schematics/tree/main"
+  },
   "scripts": {
     "build": "tsc -p tsconfig.json",
     "test": "npm run build && jasmine src/**/*_spec.js"
